@@ -27,9 +27,14 @@ button.secondary{background:#e5edf0;color:#173443}
 <form id="ballot">
 <fieldset>
 <legend>投票するチーム</legend>
-<label class="choice"><input type="radio" name="team" value="地域データ分析チーム" required> 地域データ分析チーム</label>
-<label class="choice"><input type="radio" name="team" value="需要予測チーム"> 需要予測チーム</label>
-<label class="choice"><input type="radio" name="team" value="可視化チーム"> 可視化チーム</label>
+<label class="choice"><input type="radio" name="team" value="Witch Craft Works" required> Witch Craft Works</label>
+<label class="choice"><input type="radio" name="team" value="ジェットパックキャッツ"> ジェットパックキャッツ</label>
+<label class="choice"><input type="radio" name="team" value="Super Tyou"> Super Tyou</label>
+<label class="choice"><input type="radio" name="team" value="knakalab"> knakalab</label>
+<label class="choice"><input type="radio" name="team" value="トリプルM"> トリプルM</label>
+<label class="choice"><input type="radio" name="team" value="saito"> saito</label>
+<label class="choice"><input type="radio" name="team" value="チームみゆ"> チームみゆ</label>
+<label class="choice"><input type="radio" name="team" value="アモルファス"> アモルファス</label>
 </fieldset>
 <label for="code">投票コード</label>
 <input id="code" name="code" type="text" maxlength="20" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="code-help" required>
@@ -43,7 +48,7 @@ button.secondary{background:#e5edf0;color:#173443}
 <p id="message" role="status" aria-live="polite"></p>
 <button class="secondary" id="reset" type="button" hidden>デモの投票をリセット</button>
 <script>
-const key = 'audience-award-demo-vote-v1';
+const key = 'audience-award-demo-vote-v2';
 const form = document.querySelector('#ballot');
 const receipt = document.querySelector('#receipt');
 const selection = document.querySelector('#selection');
